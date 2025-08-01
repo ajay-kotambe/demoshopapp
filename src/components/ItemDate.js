@@ -1,11 +1,14 @@
 import "./ItemDate.css";
 
-function ItemDate() {
+function ItemDate(props) {
+  const day = props.day;
+  const month = props.month;
+  const year = props.year;
   return (
     <div className="mainDiv">
-      <span className="date">20</span> &nbsp;
-      <span className="date">July</span>&nbsp;
-      <span className="date">2015</span>&nbsp;
+      <span className="date">{day}</span> &nbsp;
+      <span className="date">{month}</span>&nbsp;
+      <span className="date">{year}</span>&nbsp;
     </div>
   );
 }

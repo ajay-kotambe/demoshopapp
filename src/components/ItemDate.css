@@ -1,8 +1,9 @@
 .date {
   font-style: bold;
   font-size: 60px;
-  color: aqua;
+  color: red;
 }
-.mainDiv{
-    text-align: center;
+.mainDiv {
+  background-color: aqua;
+  text-align: center;
 }
