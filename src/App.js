@@ -27,9 +27,16 @@ function App() {
     },
   ];
 
+  // let newObj;
+
+  function getDataFromNewProduct(data) {
+    console.log(data);
+    // newObj = data;
+  }
+
   return (
     <div>
-      <NewProduct />
+      <NewProduct sendDataToApp={getDataFromNewProduct} />
       <Products items={products}></Products>;
     </div>
   );

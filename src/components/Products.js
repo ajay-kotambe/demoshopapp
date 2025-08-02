@@ -19,6 +19,11 @@ function Products(props) {
         amount={props.items[2].amount}
         date={props.items[2].date}
       />
+      {/* <ProductItem
+        title={props.newItems[0].title}
+        amount={props.newItems[0].amount}
+        date={props.newItems[0].date}
+      /> */}
     </div>
   );
 }
