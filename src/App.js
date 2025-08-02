@@ -1,43 +1,32 @@
 import "./App.css";
-import Item from "./components/Item";
-import ItemDate from "./components/ItemDate";
+// import Item from "./components/Item";
+// import ItemDate from "./components/ItemDate";
+import Card from "./components/Card";
+import Products from "./components/Products";
 
 function App() {
-  const resPrompts = [
+  const products = [
     {
-      itemName: "Nirma",
-      itemDate: "20",
-      itemMonth: "July",
-      itemYear: "2015",
+      id: "p1",
+      title: "Nirma",
+      amount: 100,
+      date: new Date(2021, 8, 10),
     },
     {
-      itemName: "SurfExcel",
-      itemDate: "31",
-      itemMonth: "July",
-      itemYear: "2010",
+      id: "p2",
+      title: "Surf Excel",
+      amount: 200,
+      date: new Date(2015, 7, 31),
+    },
+    {
+      id: "p3",
+      title: "Tide",
+      amount: 130,
+      date: new Date(2014, 2, 24),
     },
   ];
 
-  return (
-    <div>
-      <Item name={resPrompts[0].itemName}> are ye to first Item hai...</Item>
-      <ItemDate
-        day={resPrompts[0].itemDate}
-        month={resPrompts[0].itemMonth}
-        year={resPrompts[0].itemYear}
-      ></ItemDate>
-      <Item name={resPrompts[1].itemName}>are ye to second Item hai...</Item>
-      <ItemDate
-        day={resPrompts[1].itemDate}
-        month={resPrompts[1].itemMonth}
-        year={resPrompts[1].itemYear}
-      ></ItemDate>
-
-      <div className="App">
-        <h1>Hello World</h1>
-      </div>
-    </div>
-  );
+  return <Products items={products}></Products>;
 }
 
 export default App;

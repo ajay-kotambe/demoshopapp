@@ -1,0 +1,7 @@
+.products {
+  background-color: yellow;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;         /* or any width that suits your design */
+  margin: 2rem auto;        /* center horizontally */
+}
