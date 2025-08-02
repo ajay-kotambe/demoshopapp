@@ -1,0 +1,25 @@
+.product-form {
+  width: inherit;
+  padding: 30px;
+  border: 1px solid red;
+  background-color: blueviolet;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  margin: 16px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+button {
+  margin: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: red;
+}

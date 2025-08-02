@@ -1,8 +1,9 @@
 import "./App.css";
 // import Item from "./components/Item";
 // import ItemDate from "./components/ItemDate";
-import Card from "./components/Card";
+// import Card from "./components/Card";
 import Products from "./components/Products";
+import NewProduct from "./components/NewProduct";
 
 function App() {
   const products = [
@@ -26,7 +27,12 @@ function App() {
     },
   ];
 
-  return <Products items={products}></Products>;
+  return (
+    <div>
+      <NewProduct />
+      <Products items={products}></Products>;
+    </div>
+  );
 }
 
 export default App;

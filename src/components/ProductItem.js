@@ -4,10 +4,8 @@ import ProductDate from "./ProductDate";
 import Card from "./Card";
 
 const ProductItem = (props) => {
-  console.log("Before useState");
   const [newTitle, setNewTitle] = useState(props.title);
 
-  console.log("After useState");
   const clickHandler = () => {
     setNewTitle("Popcorn");
 
