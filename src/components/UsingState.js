@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const UsingState = () => {
   const [count, setCount] = useState(0);
@@ -16,8 +17,12 @@ const UsingState = () => {
   return (
     <div>
       <div>
-        <button onClick={minusClickHandler}>-</button>
-        <button onClick={plusClickHandler}>+</button>
+        <button onClick={minusClickHandler}>
+          <FaMinus />
+        </button>
+        <button onClick={plusClickHandler}>
+          <FaPlus />
+        </button>
       </div>
       <div>
         <h2>{count}</h2>

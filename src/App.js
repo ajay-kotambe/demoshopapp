@@ -7,7 +7,10 @@ import "./App.css";
 import RenderList from "./components/RenderList";
 import HandlingEvent from "./components/HandlingEvent";
 import UsingState from "./components/UsingState";
+import { useState } from "react";
+import SharingDataComps from "./components/SharingDataComps";
 function App() {
+  const [count, setCount] = useState(0);
   const products = [
     {
       id: "p1",
@@ -40,9 +43,12 @@ function App() {
     <div>
       {/* <NewProduct sendDataToApp={getDataFromNewProduct} />
       <Products items={products}></Products>; */}
-      <RenderList />
+      {/* <RenderList />
       <HandlingEvent />
-      <UsingState />
+      <UsingState /> */}
+      <SharingDataComps count= {count} setCount={setCount} />
+      <p>Clicked {count} times..!</p>
+      <SharingDataComps count= {count} setCount={setCount} />
     </div>
   );
 }
