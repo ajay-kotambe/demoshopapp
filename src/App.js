@@ -2,9 +2,11 @@ import "./App.css";
 // import Item from "./components/Item";
 // import ItemDate from "./components/ItemDate";
 // import Card from "./components/Card";
-import Products from "./components/Products";
-import NewProduct from "./components/NewProduct";
-
+// import Products from "./components/Products";
+// import NewProduct from "./components/NewProduct";
+import RenderList from "./components/RenderList";
+import HandlingEvent from "./components/HandlingEvent";
+import UsingState from "./components/UsingState";
 function App() {
   const products = [
     {
@@ -36,8 +38,11 @@ function App() {
 
   return (
     <div>
-      <NewProduct sendDataToApp={getDataFromNewProduct} />
-      <Products items={products}></Products>;
+      {/* <NewProduct sendDataToApp={getDataFromNewProduct} />
+      <Products items={products}></Products>; */}
+      <RenderList />
+      <HandlingEvent />
+      <UsingState />
     </div>
   );
 }
